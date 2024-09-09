@@ -1,7 +1,6 @@
 import { useDisclosure } from "@mantine/hooks";
-import { Drawer, Button } from "@mantine/core";
+import { Drawer } from "@mantine/core";
 import {
-  IconMenu3,
   IconHexagonLetterS,
   // IconSquareRoundedX,
 } from "@tabler/icons-react";
