@@ -34,7 +34,7 @@ const Social = () => {
 
 
   return (
-    <div className="flex  gap-4 items-center fixed bottom-[178px] -left-[195px]  rotate-90">
+    <div className="flex  gap-4 items-center fixed bottom-[178px] -left-[195px]  rotate-90 !z-20">
       {socialIcons}
       <hr className="border-[1px] bg-textColor rounded-full border-textColor text-textColor w-72" />
     </div>
