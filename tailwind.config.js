@@ -19,12 +19,14 @@ module.exports = {
       'sm-mx': { 'max': '639px' },
       'xs-mx': { 'max': '475px' },
     },
-    extend: {},
-    colors: {
-      bgColor: "#0A192F",
-      primaryColor: "#64FFDA",
-      textColor: "#8892B0"
+    extend: {
+      colors: {
+        bgColor: "#0A192F",
+        primaryColor: "#64FFDA",
+        textColor: "#8892B0"
+      },
     },
+
   },
   plugins: [],
 }
