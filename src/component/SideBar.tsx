@@ -1,18 +1,16 @@
 import { useDisclosure } from "@mantine/hooks";
 import { Drawer } from "@mantine/core";
-import {
-  IconHexagonLetterS,
-  // IconSquareRoundedX,
-} from "@tabler/icons-react";
-import { Burger } from '@mantine/core';
+import { Burger } from "@mantine/core";
+import { navLinks } from "./Header";
 
 const SideBar = () => {
-  const [opened, { toggle}] = useDisclosure(false);
+  const [opened, { toggle }] = useDisclosure(false);
   return (
     <>
       <Drawer.Root
+        className="!z-[0]"
         opened={opened}
-        size="20%"
+        size="50%"
         position="right"
         onClose={toggle}
         transitionProps={{
@@ -22,18 +20,21 @@ const SideBar = () => {
         }}
         // overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
       >
-        <Drawer.Overlay style={{ backgroundOpacity: '0.5', blur: '4' }} />
-        <Drawer.Content bg='#0A192F'>
-          <Drawer.Header className="flex items-center justify-center" bg='#0A192F'>
-            <Drawer.Title className="self-center">
-              <IconHexagonLetterS color='#64FFDA' size={40} />
-            </Drawer.Title>
-            {/* <Drawer.CloseButton icon= <IconSquareRoundedX  color="#64FFDA" size={30} stroke={2} />/> */}
-          </Drawer.Header>
-          <Drawer.Body>Drawer content</Drawer.Body>
+        <Drawer.Overlay
+          className="!z-0"
+          style={{ backgroundOpacity: "0.5", blur: "4" }}
+        />
+        <Drawer.Content className="!z-[0]" bg="#0A192F">
+          <Drawer.Body className="mt-24 text-2xl flex flex-col gap-10">{navLinks(true)}</Drawer.Body>
         </Drawer.Content>
       </Drawer.Root>
-      <Burger size="lg" color="#64FFDA"  opened={opened} onClick={toggle} />
+      <Burger
+        size="lg"
+        className=" md:hidden z-10 fixed"
+        color="#64FFDA"
+        opened={opened}
+        onClick={toggle}
+      />
     </>
   );
 };
