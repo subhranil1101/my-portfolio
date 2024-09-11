@@ -55,7 +55,7 @@ const About = () => {
             [])
 
       return (
-            <div className='flex justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' id='bg'>
+            <div className='flex justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' id='b'>
                   <div className='ml-16 w-3/5 flex flex-col'>
                         <div className='text-4xl text-primaryColor'>Hi, I am</div>
                         <div className='text-7xl text-white tracking-widest font-semibold italic py-2'>{Info.name}</div>
@@ -69,7 +69,7 @@ const About = () => {
                         <div className='text-gray-300 font-mono text-xl w-[82%] my-4 text-justify font-semibold italic'>{Info.about}</div>
                         <Button component='a' href='https://www.google.com' target='_blank' className='!text-bgColor !w-fit ' variant="filled" color="#64FFDA" size="md" radius="lg">Check Resume</Button>
                   </div>
-                  <div id='photo' className='h-[50vh] w-[25vw] rounded-full overflow-hidden flex justify-center items-center'>
+                  <div id='phot' className='h-[50vh] w-[25vw] rounded-full overflow-hidden flex justify-center items-center'>
                         <img className='w-[90%] rounded-full' src="photo.jpeg" alt="dp" />
                   </div>
             </div>
