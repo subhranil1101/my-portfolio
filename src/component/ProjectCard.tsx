@@ -1,31 +1,67 @@
-import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
+import {
+      Card,
+      Image,
+      Text,
+      Badge,
+      Button,
+      Group,
+      Indicator,
+} from "@mantine/core";
 
-const ProjectCard = () => {
+const ProjectCard = (props: any) => {
       return (
-            <Card w='360px' h='auto' shadow="sm" padding="lg" radius="md" withBorder>
-                  <Card.Section>
-                        <Image
-                              src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                              height={160}
-                              alt="Norway"
-                        />
+            <Card
+                  className="!bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA]"
+                  w="360px"
+                  h="auto"
+                  shadow="lg"
+                  padding="sm"
+                  radius="lg"
+                  withBorder
+            >
+                  <Card.Section className="p-2 h-48 m-5 ">
+                        <Image className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA] " src={props.image} alt={props.image} />
                   </Card.Section>
 
-                  <Group justify="space-between" mt="md" mb="xs">
-                        <Text fw={500}>Norway Fjord Adventures</Text>
-                        <Badge color="pink">On Sale</Badge>
+                  <Group className="h-5" justify="space-between" mt="xs" mb="xs">
+                        <Text className="!text-xl !font-mono !font-bold !text-white">
+                              {props.title}
+                        </Text>
+                        {props.live === true && (
+                              <Badge
+                                    variant="outline"
+                                    color="red"
+                                    rightSection={
+                                          <Indicator
+                                                color="red"
+                                                position="middle-end"
+                                                size={9}
+                                                processing
+                                          />
+                                    }
+                              >
+                                    Live &nbsp;
+                              </Badge>
+                        )}
                   </Group>
 
-                  <Text size="sm" c="dimmed">
-                        With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-                        activities on and around the fjords of Norway
+                  <Group className="!flex !items-center !justify-normal" justify="" mt="lg" mb="lg">
+                        {props.technologies.map((tech:string,index:number) => index <3 && <Badge key={index} className="!text-xs" variant="light" color="orange" size="lg">{tech}</Badge>)}
+                  </Group>
+                  <Text
+                        className="text-justify !text-primaryColor h-30"
+                        size="sm"
+                        c="dimmed"
+                        lineClamp={5}
+                  >
+                        {props.desc}
                   </Text>
 
-                  <Button color="blue" fullWidth mt="md" radius="md">
-                        Book classic tour now
+                  <Button className="" color="green" fullWidth mt="md" radius="xl">
+                        Show More
                   </Button>
             </Card>
-      )
-}
+      );
+};
 
-export default ProjectCard
+export default ProjectCard;
