@@ -75,9 +75,8 @@ const FullProjectModal = (props: any) => {
             </Text>
             <Group mt="md" mb="md">
               <Button
-                color="orange"
-                leftSection={<IconBrandGithub size={14} />}
-                variant="default"
+                variant="outline" color="orange"
+                leftSection={<IconBrandGithub size={20} />}
               >
                 Source Code
               </Button>
