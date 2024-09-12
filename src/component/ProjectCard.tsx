@@ -11,7 +11,7 @@ import {
 const ProjectCard = (props: any) => {
       return (
             <Card
-                  className="!bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA]"
+                  className=" !flex !flex-col !justify-between !bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA]"
                   w="360px"
                   h="auto"
                   shadow="lg"
@@ -19,12 +19,12 @@ const ProjectCard = (props: any) => {
                   radius="lg"
                   withBorder
             >
-                  <Card.Section className="p-2 h-48 m-5 ">
+                  <Card.Section className="p-2 h-48 m-4 ">
                         <Image className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA] " src={props.image} alt={props.image} />
                   </Card.Section>
 
-                  <Group className="h-5" justify="space-between" mt="xs" mb="xs">
-                        <Text className="!text-xl !font-mono !font-bold !text-white">
+                  <Group className="" justify="space-between" mt="xs" mb="xs">
+                        <Text className="!text-2xl !font-mono !font-bold !text-white">
                               {props.title}
                         </Text>
                         {props.live === true && (
@@ -45,11 +45,11 @@ const ProjectCard = (props: any) => {
                         )}
                   </Group>
 
-                  <Group className="!flex !items-center !justify-normal" justify="" mt="lg" mb="lg">
+                  <Group className="!flex !items-center !justify-normal" justify="" mt="xs" mb="xs">
                         {props.technologies.map((tech:string,index:number) => index <3 && <Badge key={index} className="!text-xs" variant="light" color="orange" size="lg">{tech}</Badge>)}
                   </Group>
                   <Text
-                        className="text-justify !text-primaryColor h-30"
+                        className="text-justify !text-primaryColor"
                         size="sm"
                         c="dimmed"
                         lineClamp={5}
