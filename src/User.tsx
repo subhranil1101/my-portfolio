@@ -89,4 +89,27 @@ const ProjectInfo = [
   },
 ];
 
-export { Info, ProjectInfo };
+const SKillInfo = [
+  {
+    title:"Frontend",
+    skills:['HTML', 'CSS', 'JavaScript', 'React Js', 'Tailwind CSS', 'Bootstrap']
+  },
+  {
+    title:'Backend',
+    skills:['NodeJs','ExpressJs', 'MongoDb', 'MySQL']
+  },
+  {
+    title:'Languages',
+    skills:['C','Java','Python','JavaScript']
+  },
+  {
+    title:'Tools',
+    skills:['Git', 'GitHub', 'VS Code', 'MongoDb Compass', 'Thunder Client']
+  },
+  {
+    title:'Others',
+    skills:['DSA', 'OOPS', 'DBMS', 'OS', 'CN']
+  }
+]
+
+export { Info, ProjectInfo, SKillInfo };
