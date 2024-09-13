@@ -112,4 +112,29 @@ const SKillInfo = [
   }
 ]
 
-export { Info, ProjectInfo, SKillInfo };
+const EducationInfo = [
+  {
+    title:'Secondary Education (M.P)',
+    board:'WBBSE',
+    subject:'',
+    yop:'2018',
+    grade:'92.42%'
+  },
+  {
+    title:'Higher Secondary Education (H.S)',
+    board:'WBCHSE',
+    subject:'Science',
+    yop:'2020',
+    grade:'95%'
+  },
+  {
+    title:'Bachelor in Technology (B.Tech)',
+    board:'MAKAUT',
+    subject:'Information Technology',
+    yop:'2021-2025',
+    grade:'89.20% (upto 6th sem)'
+  },
+]
+
+
+export { Info, ProjectInfo, SKillInfo, EducationInfo };

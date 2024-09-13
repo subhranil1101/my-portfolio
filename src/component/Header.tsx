@@ -2,7 +2,7 @@ import React from 'react'
 import { IconHexagonLetterSFilled } from '@tabler/icons-react';
 import SideBar from './SideBar';
 
-const links = ['About', 'Projects', 'Education', 'SKills', 'Contact me']
+const links = ['About', 'Projects', 'SKills', 'Education', 'Contact me']
 
 const navLinks = (col:boolean) => {
   return links.map((link, index) => {

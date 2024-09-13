@@ -1,10 +1,10 @@
-import React from 'react'
 import Header from './Header'
 import Social from './Social'
 import Mail from './Mail'
 import About from './About'
 import Projects from './Projects'
 import Skills from './Skills'
+import Education from './Education'
 
 const HomePage = () => {
   return (
@@ -15,6 +15,7 @@ const HomePage = () => {
       <About/>
       <Projects/>
       <Skills/>
+      <Education/>
     </>
   )
 }
