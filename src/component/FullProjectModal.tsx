@@ -44,7 +44,7 @@ const FullProjectModal = (props: any) => {
           </Modal.Header>
           <Modal.Body className="!bg-bgColor !border-2  !border-primaryColor !rounded-bl-xl !rounded-br-xl !border-t-0">
             <Image
-              className="!rounded-xl pt-4 !shadow-[0_0_5px_0_#64FFDA] "
+              className="!rounded-xl  !shadow-[0_0_5px_0_#64FFDA] "
               src={props.image}
               alt={props.image}
             />
@@ -74,20 +74,26 @@ const FullProjectModal = (props: any) => {
               {props.desc}
             </Text>
             <Group mt="md" mb="md">
-              <Button
-                variant="outline" color="orange"
-                leftSection={<IconBrandGithub size={20} />}
-              >
-                Source Code
-              </Button>
+              <a href={props.github} target="_blank" rel="noreferrer">
+                <Button
+                  variant="outline"
+                  color="orange"
+                  leftSection={<IconBrandGithub size={20} />}
+                >
+                  Source Code
+                </Button>
+              </a>
 
+              <a href={props.link} target="_blank" rel="noreferrer" >
               <Button
                 variant="light"
                 color="green"
-                rightSection={<IconArrowRight size={14} />}
+                size='compact-xl'
+                rightSection={<IconArrowRight size={20} />}
               >
                 Visit Site
               </Button>
+              </a>
             </Group>
           </Modal.Body>
         </Modal.Content>
