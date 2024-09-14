@@ -13,7 +13,7 @@ const FullProjectModal = (props: any) => {
   return (
     <div>
       <Modal.Root size="50%" opened={props.opened} onClose={props.close}>
-        <Modal.Overlay />
+        <Modal.Overlay className="!backdrop-opacity-85 !blur-sm"/>
         <Modal.Content className="!rounded-xl font-mono">
           <Modal.Header className=" !bg-bgColor !border-2  !border-primaryColor !rounded-tl-xl !rounded-tr-xl !border-b-0">
             <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl !font-bold !italic">

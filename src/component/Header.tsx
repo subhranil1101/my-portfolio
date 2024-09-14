@@ -2,11 +2,11 @@ import React from 'react'
 import { IconHexagonLetterSFilled } from '@tabler/icons-react';
 import SideBar from './SideBar';
 
-const links = ['About', 'Projects', 'SKills', 'Education', 'Contact me']
+const links = ['About', 'Projects', 'Skills', 'Education', 'Contact']
 
 const navLinks = (col:boolean) => {
   return links.map((link, index) => {
-    return <a className={`${col?'flex flex-col justify-center items-center':''} text-textColor hover:text-primaryColor hover:font-semibold`} href={`/${link}`} ><span className='text-primaryColor'>0{index + 1}.</span>{link}</a>
+    return <a className={`${col?'flex flex-col justify-center items-center':''} text-textColor hover:text-primaryColor hover:font-semibold`} href={`#${link}`} ><span className='text-primaryColor'>0{index + 1}.</span>{link}</a>
   }
   )
 }

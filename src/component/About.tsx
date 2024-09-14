@@ -6,6 +6,8 @@ import Typewriter from 'typewriter-effect'
 import DOTS from 'vanta/dist/vanta.dots.min'
 //@ts-ignore
 import TRUNK from 'vanta/dist/vanta.trunk.min'
+import { useDisclosure } from '@mantine/hooks'
+import ResumeViwer from './ResumeViwer'
 const About = () => {
 
       const [dots, setDots] = useState<any>(null)
@@ -54,7 +56,10 @@ const About = () => {
             // eslint-disable-next-line
             [])
 
+      const[opened,{open,close}] = useDisclosure(false)
+      
       return (
+            <>
             <div className='flex justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' id='b'>
                   <div className='ml-16 w-3/5 flex flex-col'>
                         <div className='text-4xl text-primaryColor'>Hi, I am</div>
@@ -67,12 +72,14 @@ const About = () => {
                               }}
                         /></span></div>
                         <div className='text-gray-300 font-mono text-xl w-[82%] my-4 text-justify font-semibold italic'>{Info.about}</div>
-                        <Button component='a' href='https://www.google.com' target='_blank' className='!text-bgColor !w-fit ' variant="filled" color="#64FFDA" size="md" radius="lg">Check Resume</Button>
+                        <Button onClick={open} className='!text-bgColor !w-fit ' variant="filled" color="#64FFDA" size="md" radius="lg">Check Resume</Button>
                   </div>
                   <div id='phot' className='h-[50vh] w-[25vw] rounded-full overflow-hidden flex justify-center items-center'>
                         <img className='w-[90%] rounded-full' src="photo.jpeg" alt="dp" />
                   </div>
             </div>
+            <ResumeViwer opened={opened} close={close} />
+            </>
       )
 }
 

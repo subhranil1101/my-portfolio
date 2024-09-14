@@ -25,7 +25,7 @@ const TimelineItem = (items: any) => {
 
 const Education = () => {
       return (
-            <div className="px-32 ml-16 mb-16 pb-12  font-mono" id="Skills">
+            <div className="px-32 ml-16 mb-16 pb-12  font-mono" id="Education">
                   <h1 className="text-4xl flex justify-center text-white font-bold pt-10 my-10">
                         <span className="text-primaryColor">04.&nbsp;</span>Education
                   </h1>
