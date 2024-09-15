@@ -136,5 +136,42 @@ const EducationInfo = [
   },
 ]
 
+const slugs = [
+  "dart",
+  "python",
+  "c",
+  "javascript",
+  "html5",
+  "css3",
+  "java",
+  "typescript",
+  "nodedotjs",
+  "git",
+  "github",
+  "express",
+  "visualstudiocode",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "react",
+  "flutter",
+  "android",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "jira",
+  "gitlab",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+  "mysql",
+  "mongodb"
+];
 
-export { Info, ProjectInfo, SKillInfo, EducationInfo };
+
+export { Info, ProjectInfo, SKillInfo, EducationInfo, slugs };
