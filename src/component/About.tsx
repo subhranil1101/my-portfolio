@@ -1,72 +1,18 @@
 import { Button } from '@mantine/core'
 import { Info } from '../User'
-import { useState, useEffect } from 'react'
 import Typewriter from 'typewriter-effect'
-//@ts-ignore
-import DOTS from 'vanta/dist/vanta.dots.min'
-//@ts-ignore
-import TRUNK from 'vanta/dist/vanta.trunk.min'
 import { useDisclosure } from '@mantine/hooks'
 import ResumeViewer from './ResumeViewer'
 import { IconDownload, IconArrowRight } from '@tabler/icons-react';
 import Particles from './magicui/Particles'
-import { color } from 'framer-motion'
 import { NeonGradientCard } from './magicui/neon-gradient-card'
 
 
 const About = () => {
-
-      const [dots, setDots] = useState<any>(null)
-      const [trunk, setTrunk] = useState<any>(null)
-      useEffect(() => {
-            if (!dots) {
-                  setDots(DOTS({
-                        el: '#bg',
-                        mouseControls: true,
-                        touchControls: true,
-                        gyroControls: false,
-                        minHeight: 200.00,
-                        minWidth: 200.00,
-                        scale: 1.00,
-                        scaleMobile: 1.00,
-                        color: 0x64FFDA,
-                        color2: 0x204AFF,
-                        backgroundColor: 0x0A192F,
-                        size: 3,
-                        spacing: 20.00,
-                        showLines: false
-                  }))
-            }
-
-            if (!trunk) {
-                  setTrunk(TRUNK({
-                        el: "#photo",
-                        mouseControls: true,
-                        touchControls: true,
-                        gyroControls: false,
-                        minHeight: 200.00,
-                        minWidth: 200.00,
-                        scale: 1.00,
-                        scaleMobile: 1.00,
-                        color: 0x64FFDA,
-                        backgroundColor: 0x0A192F,
-                        spacing: 3.00,
-                        chaos: 2.50
-                  }))
-            }
-            return () => {
-                  if (dots) dots.destroy()
-                  if (trunk) trunk.destroy()
-            }
-      },
-            // eslint-disable-next-line
-            [])
-
       const [opened, { open, close }] = useDisclosure(false)
-
       return (
             <div >
-                  <div className='flex relative justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' id='b'>
+                  <div className='flex relative justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' >
                         <Particles
                               className="absolute inset-0 -z-10"
                               quantity={1000}
@@ -101,7 +47,7 @@ const About = () => {
                                     <Button className='!text-primaryColor' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size="md" radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
                               </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="800" id='phot' className='h-fit w-fit rounded-full  flex justify-center items-center'>
+                        <div data-aos="fade-left" data-aos-duration="800"  className='h-fit w-fit rounded-full  flex justify-center items-center'>
                         <NeonGradientCard className="w-[375px] h-[375px] items-center justify-center text-center">
                               <img className='w-full h-full rounded-full' src="photo.jpeg" alt="dp" />
                         </NeonGradientCard>
