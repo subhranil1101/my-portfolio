@@ -63,7 +63,7 @@ const About = () => {
       return (
             <div >
                   <div className='flex justify-center items-center font-mono overflow-hidden px-24 h-[80vh] mt-5' id='b'>
-                        <div data-aos="fade-right" data-aos-duration="500" className='ml-16 w-3/5 flex flex-col'>
+                        <div data-aos="fade-right" data-aos-duration="800" className='ml-16 w-3/5 flex flex-col'>
                               <div className='text-4xl text-primaryColor'>Hi, I am</div>
                               <div className='text-7xl text-white tracking-widest font-semibold italic py-2'>{Info.name}</div>
                               <div className=' flex items-center text-4xl text-white py-3'>I'm a&nbsp;<span className='text-5xl text-primaryColor'><Typewriter
@@ -88,7 +88,7 @@ const About = () => {
                                     <Button className='!text-primaryColor' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size="md" radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
                               </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="500" id='phot' className='h-[50vh] w-[25vw] rounded-full overflow-hidden flex justify-center items-center'>
+                        <div data-aos="fade-left" data-aos-duration="800" id='phot' className='h-[50vh] w-[25vw] rounded-full overflow-hidden flex justify-center items-center'>
                               <img className='w-[90%] rounded-full' src="photo.jpeg" alt="dp" />
                         </div>
                   </div>
