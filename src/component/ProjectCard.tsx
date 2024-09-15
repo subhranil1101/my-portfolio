@@ -17,7 +17,8 @@ const ProjectCard = (props: any) => {
       return (
             <>
 
-                  <Card
+                  <Card data-aos="fade-up"
+                        data-aos-duration="500"
                         className=" !flex !flex-col !justify-between !bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA]"
                         w="360px"
                         h="auto"

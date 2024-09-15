@@ -19,11 +19,11 @@ const Contact = () => {
       }
 
       return (
-            <div className="px-32 ml-16 mb-16 pb-12  font-mono" id="Contact">
+            <div  className="px-32 ml-16 mb-16 pb-12  font-mono" id="Contact">
                   <h1 className="text-4xl flex justify-center text-white font-bold pt-8 my-8">
                         <span className="text-primaryColor">05.&nbsp;</span>Contact Me
                   </h1>
-                  <div className="  flex flex-col  gap-3 border-2  border-primaryColor rounded-3xl w-[70%] m-auto shadow-[0_0_6px_0_#64FFDA]">
+                  <div data-aos="fade-up" data-aos-duration="500" className="  flex flex-col  gap-3 border-2  border-primaryColor rounded-3xl w-[70%] m-auto shadow-[0_0_6px_0_#64FFDA]">
                         <div className=" flex items-center gap-2 text-4xl font-bold font-mono ml-8  text-white p-3">Let's Connect <IconAffiliate size={35} /></div>
                         <div className="flex flex-col gap-7 mb-3 w-[90%] m-auto">
                               <FloatingInput id='name' name='Enter your Name' value={formData.name} handleChange={handleChange} />
