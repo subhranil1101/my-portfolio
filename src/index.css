@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar-track {
+  border: 1px solid #0a192f;
+  border-radius: 10px;
+  background-color: #0a192f;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #64ffda;
+}
+
 .dm-mono-light {
   font-family: "DM Mono", monospace;
   font-weight: 300;
