@@ -1,8 +1,11 @@
 
-import { Modal } from "@mantine/core";
+import { Modal, ActionIcon, Tooltip } from "@mantine/core";
 import { Document, Page } from 'react-pdf';
+import { IconFileDownload } from '@tabler/icons-react';
+import { Info } from "../User";
 
-const ResumeViwer = (props: any) => {
+
+const ResumeViewer = (props: any) => {
 
       return (
             <div>
@@ -10,8 +13,13 @@ const ResumeViwer = (props: any) => {
                         <Modal.Overlay className="!backdrop-opacity-85 !blur-sm" />
                         <Modal.Content className="!rounded-xl font-mono">
                               <Modal.Header className=" !bg-bgColor !border-2  !border-primaryColor !rounded-tl-xl !rounded-tr-xl !border-b-0">
-                                    <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl !font-bold !italic">
+                                    <Modal.Title className="!flex !gap-6 !items-center  text-white !text-4xl !font-bold !italic">
                                           Resume
+                                          <Tooltip label="Download"  position="right" offset={8}>
+                                                <ActionIcon component="a" href="/Resume_Subhranil Das.pdf" download={Info.name} variant="light" color="orange" size="lg" radius="md" aria-label="Settings">
+                                                      <IconFileDownload style={{ width: '70%', height: '70%' }} stroke={1.5} />
+                                                </ActionIcon>
+                                          </Tooltip>
                                     </Modal.Title>
                                     <Modal.CloseButton
                                           size="md"
@@ -28,4 +36,4 @@ const ResumeViwer = (props: any) => {
       )
 }
 
-export default ResumeViwer
+export default ResumeViewer
