@@ -71,7 +71,7 @@ const ProjectInfo = [
   },
   {
     title: "Twitter-X-Clone",
-    desc: "Ui clone of Twitter or X web application. Only the homepage clone of twitter",
+    desc: "Ui clone of Twitter or X web application. Only the homepage clone of twitter made using html and Tailwind css. All sections of the home page is made",
     image: "./twitter.png",
     live: false,
     technologies: ["HTML", "Tailwind Css"],
@@ -80,7 +80,7 @@ const ProjectInfo = [
   },
   {
     title: "Netflix-Clone",
-    desc: "Ui clone of Netflix web application. Only the Homepage clone",
+    desc: "Ui clone of Netflix web application. Only the Homepage clone made using HTML and vanila CSS",
     image: "./netflix.png",
     live: false,
     technologies: ["HTML", "CSS"],
