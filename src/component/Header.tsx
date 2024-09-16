@@ -13,9 +13,9 @@ const navLinks = (col:boolean) => {
 
 const Header = () => {
   return (
-    <nav data-aos="fade-down" data-aos-duration="500" className='flex bg-bgColor text-primaryColor dm-mono-regular  justify-between items-center  px-14 h-[16vh] w-full'>
+    <nav data-aos="fade-down" data-aos-duration="500" className='flex bg-bgColor text-primaryColor dm-mono-regular  justify-between xs-mx:justify-around items-center  px-14 h-[16vh] xs-mx:h-[13vh] w-full -z-10'>
       <IconHexagonLetterSFilled className='z-10' size={60} />
-      <div className='md:flex justify-evenly gap-10 lg-mx:gap-8 md-mx:gap-2 xl:text-2xl md:text-md lg-mx:text-md  hidden'>
+      <div className='md:flex justify-evenly gap-10 lg-mx:gap-4 md-mx:gap-2 xl:text-2xl md:text-md lg-mx:text-md xl-mx:text-lg  hidden'>
         {navLinks(false)}
       </div>
       <span className='md:hidden pb-[40px] px-16' >

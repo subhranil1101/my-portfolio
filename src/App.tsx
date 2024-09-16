@@ -1,4 +1,4 @@
-import { MantineProvider } from "@mantine/core";
+import { createTheme, MantineProvider } from "@mantine/core";
 import HomePage from "./component/HomePage";
 import '@mantine/core/styles.css';
 import { pdfjs } from 'react-pdf';
@@ -16,8 +16,19 @@ function App() {
     AOS.init();
   }, [])
   
+const theme = createTheme({
+  breakpoints:{
+    'xs':'320px',
+    'sm':'476px',
+    'md':'640px',
+    'bs':'768px',
+    'lg':'900px',
+    'xl':'1024px',
+    '2xl':'1280px',
+  },
+})
   return (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <HomePage />
     </MantineProvider>
   );

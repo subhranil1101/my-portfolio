@@ -25,7 +25,7 @@ const Social = () => {
   ]
 
   const socialIcons = socialLinks.map((socialLink) => {
-    return <a key={socialLink.link} href={`${socialLink.link}`} target="_blank" rel="noreferrer" className="text-textColor flex flex-col gap-5 font-mono text-lg hover:cursor-pointer hover:font-medium hover:text-primaryColor letter tracking-widest hover:-translate-x-2 transition transform duration-150 ease-in-out -rotate-90">
+    return <a key={socialLink.link} href={`${socialLink.link}`} target="_blank" rel="noreferrer" className="text-textColor flex flex-col gap-5 font-mono text-lg  hover:cursor-pointer hover:font-medium hover:text-primaryColor letter tracking-widest hover:-translate-x-2 transition transform duration-150 ease-in-out -rotate-90">
       <socialLink.icon size={30} />
     </a>
   }
@@ -33,9 +33,9 @@ const Social = () => {
 
 
   return (
-    <div className="flex  gap-4 items-center fixed bottom-[178px] -left-[195px]  rotate-90 !z-20">
+    <div className="flex  gap-4  items-center fixed bottom-[178px] -left-[195px] md-mx:-left-[220px]  rotate-90 !z-10">
       {socialIcons}
-      <hr className="border-[1px] bg-textColor rounded-full border-textColor text-textColor w-72" />
+      <hr className="border-[1px] bg-textColor rounded-full border-textColor text-textColor w-72 " />
     </div>
   );
 };
