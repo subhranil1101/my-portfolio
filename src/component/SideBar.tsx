@@ -10,7 +10,7 @@ const SideBar = () => {
       <Drawer.Root
         className="!z-[30]"
         opened={opened}
-        size="30%"
+        size="40%"
         position="right"
         onClose={toggle}
         transitionProps={{
