@@ -25,8 +25,8 @@ const ProjectCard = (props: any) => {
             <div className="lg-mx:w-full">
                   <Card data-aos="fade-up"
                         data-aos-duration="500"
-                        className=" !flex !flex-col !justify-between !bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA] lg-mx:!w-[70%] lg-mx:!m-auto"
-                        w="360px"
+                        className=" !flex !flex-col !justify-between !bg-transparent !border-2 cursor-pointer transition-transform duration-300 ease-in-out !border-primaryColor hover:!scale-105 hover:!shadow-[0_0_10px_1px_#64FFDA] lg-mx:!w-[70%] lg-mx:!m-auto 2xl-mx:min-w-full"
+                        w="350px"
                         h="auto"
                         shadow="lg"
                         padding="sm"
@@ -63,7 +63,7 @@ const ProjectCard = (props: any) => {
                               {props.technologies.map((tech: string, index: number) => index < 3 && <Badge key={index} className="!text-xs sm-mx:!text-[10px]"  variant="light" color="orange" size={btn}>{tech}</Badge>)}
                         </Group>
                         <Text
-                              className="text-justify sm-mx:!text-xs !text-primaryColor !line-clamp-3"
+                              className="text-justify sm-mx:!text-xs !text-primaryColor !line-clamp-3 xs-mx:!py-1 xs-mx:!line-clamp-2"
                               size="sm"
                               c="dimmed"
                               // lineClamp={4}

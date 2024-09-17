@@ -10,7 +10,7 @@ import Footer from './Footer'
 import Loader from './Loader'
 import { useState,useEffect } from 'react'
 const HomePage = () => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
