@@ -35,7 +35,7 @@ const Contact = () => {
       }
 
       return (
-            <div  className="px-32 ml-16 md-mx:pl-24 md-mx:pr-20 xs-mx:pl-16 xs-mx:pr-[60px] xs-mx:ml-auto  mb-16 pb-12  font-mono" id="Contact">
+            <div  className="px-32 ml-16 md-mx:pl-7 md-mx:pr-20 xs-mx:pl-16 xs-mx:pr-[60px] xs-mx:ml-auto  mb-16 pb-12  font-mono" id="Contact">
                   <h1 className="text-4xl sm-mx:text-2xl flex justify-center text-white font-bold pt-8 my-8 sm-mx:pt-5">
                         <span className="text-primaryColor">05.&nbsp;</span>Contact Me
                   </h1>
