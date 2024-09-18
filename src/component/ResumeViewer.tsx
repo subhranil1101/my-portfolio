@@ -16,7 +16,7 @@ const ResumeViewer = (props: any) => {
                                     <Modal.Title className="!flex !gap-6 !items-center  text-white !text-4xl !font-bold !italic">
                                           Resume
                                           <Tooltip label="Download"  position="right" offset={8}>
-                                                <ActionIcon component="a" href="/Resume_Subhranil Das.pdf" download={Info.name} variant="light" color="orange" size="lg" radius="md" aria-label="Settings">
+                                                <ActionIcon component="a" href="Resume_Subhranil Das.pdf" download={Info.name} variant="light" color="orange" size="lg" radius="md" aria-label="Settings">
                                                       <IconFileDownload style={{ width: '70%', height: '70%' }} stroke={1.5} />
                                                 </ActionIcon>
                                           </Tooltip>
@@ -28,7 +28,7 @@ const ResumeViewer = (props: any) => {
                                     />
                               </Modal.Header>
                               <Modal.Body className="!bg-bgColor !border-2  !border-primaryColor !rounded-bl-xl !rounded-br-xl !border-t-0">
-                                    <Document file="./Resume_Subhranil Das.pdf"> <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} /></Document>
+                                    <Document file="Resume_Subhranil Das.pdf"> <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} /></Document>
                               </Modal.Body>
                         </Modal.Content>
                   </Modal.Root>

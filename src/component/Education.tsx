@@ -14,7 +14,7 @@ const TimelineItem = (items: any) => {
                   <div className='!shadow-[0_0_10px_0_#64FFDA50] !border-t-2 !border-b-2 !border-primaryColor p-4 sm-mx:p-1  rounded-2xl  '>
                         <div className='hover:scale-105 flex flex-col justify-start items-start px-4 sm-mx:px-2 xs-mx:px-1 sm-mx:m-auto cursor-default'>
                               <div className=' text-2xl sm-mx:text-lg xs-mx:text-sm sm-mx:gap-2 xs-mx:gap-1 sm-mx:text-balance font-bold font-mono text-primaryColor flex justify-start items-center gap-4'>
-                                    <img className='w-8 sm-mx:w-6 ' src={`/icons/${item.board}.png`} alt="board" />
+                                    <img className='w-8 sm-mx:w-6 ' src={`icons/${item.board}.png`} alt="board" />
                                     <span>{item.title}</span>
                               </div>
 

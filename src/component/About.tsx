@@ -42,7 +42,7 @@ const About = () => {
                                     >
                                           Check Resume
                                     </Button>
-                                    <Button className='!text-primaryColor !w-fit' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
+                                    <Button className='!text-primaryColor !w-fit' component='a' href='Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
                               </div>
                         </div>
                         <div data-aos="fade-left" data-aos-duration="800" className='h-fit w-fit rounded-full  flex justify-center items-center z-0'>
