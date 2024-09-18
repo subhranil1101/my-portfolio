@@ -18,7 +18,7 @@ const FullProjectModal = (props: any) => {
           <Modal.Header className=" !bg-bgColor !border-2  !border-primaryColor !rounded-tl-xl !rounded-tr-xl !border-b-0">
             <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl !font-bold !italic">
               {props.title}
-              {props.live === false && (
+              {props.live === true && (
                 <Badge
                   size="md"
                   variant="outline"
