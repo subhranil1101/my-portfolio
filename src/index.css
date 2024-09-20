@@ -56,3 +56,15 @@ html {
   font-weight: 500;
   font-style: italic;
 }
+
+#drivebtn {
+  @media (min-width: 639px) {
+    display: none;
+  }
+}
+
+#viewbtn {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}

@@ -18,13 +18,16 @@ function App() {
   
 const theme = createTheme({
   breakpoints:{
-    'xs':'320px',
-    'sm':'476px',
-    'md':'640px',
-    'bs':'768px',
-    'lg':'900px',
-    'xl':'1024px',
-    '2xl':'1280px',
+    'xxs':'320px',
+    'xs':'476px',
+    'sm':'640x',
+    'md':'787px',
+    'bs':'900px',
+    'lg':'1025px',
+    'lxl':'1180px',
+    'xl':'1313px',
+    '2xl':'1536px',
+    
   },
 })
   return (

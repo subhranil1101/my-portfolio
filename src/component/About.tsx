@@ -11,11 +11,14 @@ import { NeonGradientCard } from './magicui/neon-gradient-card'
 const About = () => {
       const [opened, { open, close }] = useDisclosure(false)
       const btn = useMatches({
-            xs:'xs',
-            sm:'sm',
-            md:'md',
-            lg:'lg'
+            xs: 'xs',
+            sm: 'sm',
+            md: 'md',
+            lg: 'lg'
       })
+
+      const driveLink = 'https://drive.google.com/file/d/1vUqUtGItw2Sg6TdfOGDUUOWcbw9ICL2Z/view?usp=sharing'
+
       return (
             <div >
                   <div className='flex md-mx:flex-col-reverse md-mx:h-fit md-mx:pt-5 xs-mx:pt-0 md-mx:overflow-visible  relative md-mx:gap-6 justify-around lg-mx:justify-center xs-mx:justify-center items-center font-mono overflow-visible px-24 sm-mx:px-16 xs-mx:px-12 h-[80vh] mt-5  '>
@@ -32,17 +35,31 @@ const About = () => {
                               /></span></div>
                               <div className='text-gray-300 font-mono text-xl md-mx:text-sm xl-mx:text-lg lxl-mx:text-sm xs-mx:text-xs xs-mx:text-center w-[82%] md-mx:w-[95%] xs-mx:w-[87%] my-4 xs-mx:my-1 text-justify font-semibold italic'>{Info.about}</div>
                               <div className='flex  xs-mx:flex-col xs-mx:items-center xs-mx:justify-center gap-4 xs-mx:gap-2 mt-10 xs-mx:mt-4 md-mx:mt-3'>
-                                    <Button
-                                          className='!text-bgColor'
-                                          onClick={open}
-                                          color="#64FFDA"
-                                          size={btn} radius="lg"
-                                          variant="filled"
-                                          rightSection={<IconArrowRight size={20} />}
-                                    >
-                                          Check Resume
-                                    </Button>
-                                    <Button className='!text-primaryColor !w-fit' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
+                                    <div id='drivebtn'>
+                                          <Button
+                                                component='a' href={driveLink} target='_blank'
+                                                className='!text-bgColor '
+                                                color="#64FFDA"
+                                                size={btn} radius="lg"
+                                                variant="filled"
+                                                rightSection={<IconArrowRight size={20} />}
+                                          >
+                                                Check Resume
+                                          </Button>
+                                    </div>
+                                    <div id='viewbtn'>
+                                          <Button
+                                                className='!text-bgColor !'
+                                                onClick={open}
+                                                color="#64FFDA"
+                                                size={btn} radius="lg"
+                                                variant="filled"
+                                                rightSection={<IconArrowRight size={20} />}
+                                          >
+                                                Check Resume
+                                          </Button>
+                                          <Button className=' !text-primaryColor !w-fit' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
+                                    </div>
                               </div>
                         </div>
                         <div data-aos="fade-left" data-aos-duration="800" className='h-fit w-fit rounded-full  flex justify-center items-center z-0'>
