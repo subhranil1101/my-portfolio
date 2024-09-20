@@ -10,7 +10,7 @@ const SkillBadge = (skills: []) => {
       return skills.map((skill: any, index: number) => {
             return (
                   <div key={index} className='flex items-center gap-1 px-2 xs-mx:px-1 py-1 xs-mx:py-0.5 rounded-full border border-primaryColor'>
-                        <Avatar className='!rounded-full' variant="transparent" radius={logo} src={`/icons/${skill}.png`} />
+                        <Avatar className='!rounded-full' variant="transparent" radius={logo} src={`icons/${skill}.png`} />
                         <div className='text-textColor hover:text-primaryColor hover:font-bold font-medium text-xl lg-mx:text-lg sm-mx:text-sm sm-mx:font-semibold'>{skill}</div>
                   </div>)
       })
