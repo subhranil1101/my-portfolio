@@ -35,7 +35,6 @@ const About = () => {
                               /></span></div>
                               <div className='text-gray-300 font-mono text-xl md-mx:text-sm xl-mx:text-lg lxl-mx:text-sm xs-mx:text-xs xs-mx:text-center w-[82%] md-mx:w-[95%] xs-mx:w-[87%] my-4 xs-mx:my-1 text-justify font-semibold italic'>{Info.about}</div>
                               <div className='flex  xs-mx:flex-col xs-mx:items-center xs-mx:justify-center gap-4 xs-mx:gap-2 mt-10 xs-mx:mt-4 md-mx:mt-3'>
-<<<<<<< HEAD
                                     <div id='drivebtn'>
                                           <Button
                                                 component='a' href={driveLink} target='_blank'
@@ -61,19 +60,6 @@ const About = () => {
                                           </Button>
                                           <Button className=' !text-primaryColor !w-fit' component='a' href='/Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
                                     </div>
-=======
-                                    <Button
-                                          className='!text-bgColor'
-                                          onClick={open}
-                                          color="#64FFDA"
-                                          size={btn} radius="lg"
-                                          variant="filled"
-                                          rightSection={<IconArrowRight size={20} />}
-                                    >
-                                          Check Resume
-                                    </Button>
-                                    <Button className='!text-primaryColor !w-fit' component='a' href='Resume_Subhranil Das.pdf' download={Info.name} variant="outline" size={btn} radius="lg" rightSection={<IconDownload size={20} />}>Download</Button>
->>>>>>> 44f5418ca1948dbc5516ce3828b983874026fd3c
                               </div>
                         </div>
                         <div data-aos="fade-left" data-aos-duration="800" className='h-fit w-fit rounded-full  flex justify-center items-center z-0'>
