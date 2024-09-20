@@ -20,7 +20,7 @@ module.exports = {
       'lg-mx': { 'max': '1024px' },
       'bs-mx': { 'max': '899px' },
       'md-mx': { 'max': '786px' },
-      'sm-mx': { 'max': '639px' },
+      'sm-mx': { 'max': '640px' },
       'xs-mx': { 'max': '475px' },
     },
     extend: {

@@ -35,7 +35,7 @@ const About = () => {
                               /></span></div>
                               <div className='text-gray-300 font-mono text-xl md-mx:text-sm xl-mx:text-lg lxl-mx:text-sm xs-mx:text-xs xs-mx:text-center w-[82%] md-mx:w-[95%] xs-mx:w-[87%] my-4 xs-mx:my-1 text-justify font-semibold italic'>{Info.about}</div>
                               <div className='flex  xs-mx:flex-col xs-mx:items-center xs-mx:justify-center gap-4 xs-mx:gap-2 mt-10 xs-mx:mt-4 md-mx:mt-3'>
-                                    <div id='drivebtn'>
+                                    <div id='drivebtn' className='sm-mx:!block sm:!hidden'>
                                           <Button
                                                 component='a' href={driveLink} target='_blank'
                                                 className='!text-bgColor '
@@ -47,9 +47,9 @@ const About = () => {
                                                 Check Resume
                                           </Button>
                                     </div>
-                                    <div id='viewbtn' className='flex gap-4'>
+                                    <div id='viewbtn' className='!flex !gap-4 !items-center sm-mx:!hidden sm:!block'>
                                           <Button
-                                                className='!text-bgColor '
+                                                className='!text-bgColor  '
                                                 onClick={open}
                                                 color="#64FFDA"
                                                 size={btn} radius="lg"
