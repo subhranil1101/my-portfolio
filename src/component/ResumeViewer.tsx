@@ -50,11 +50,7 @@ const ResumeViewer = (props: any) => {
                                     />
                               </Modal.Header>
                               <Modal.Body className="!bg-bgColor !border-2  !border-primaryColor !rounded-bl-xl !rounded-br-xl !border-t-0">
-<<<<<<< HEAD
                                     <Document  file="./Resume_Subhranil Das.pdf"> <Page className='flex justify-center content ' canvasBackground="transparent" scale={myScale}  pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} /></Document>
-=======
-                                    <Document file="Resume_Subhranil Das.pdf"> <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} /></Document>
->>>>>>> 44f5418ca1948dbc5516ce3828b983874026fd3c
                               </Modal.Body>
                         </Modal.Content>
                   </Modal.Root>
