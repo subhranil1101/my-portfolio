@@ -47,9 +47,9 @@ const About = () => {
                                                 Check Resume
                                           </Button>
                                     </div>
-                                    <div id='viewbtn'>
+                                    <div id='viewbtn' className='flex gap-4'>
                                           <Button
-                                                className='!text-bgColor !'
+                                                className='!text-bgColor '
                                                 onClick={open}
                                                 color="#64FFDA"
                                                 size={btn} radius="lg"
