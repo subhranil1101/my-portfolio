@@ -6,17 +6,26 @@ import {
   Indicator,
   Group,
   Text,
+  useMatches
 } from "@mantine/core";
 import { IconArrowRight, IconBrandGithub } from "@tabler/icons-react";
 
 const FullProjectModal = (props: any) => {
+  const modalSize = useMatches({
+    '2xl': '2xl',
+    'xl': 'xl',
+    'lg': 'xl',
+    'md': 'xl',
+    'sm': 'sm',
+    'xs': 'xl',
+  })
   return (
     <div>
-      <Modal.Root size="50%" opened={props.opened} onClose={props.close}>
+      <Modal.Root size={modalSize} opened={props.opened} onClose={props.close}>
         <Modal.Overlay className="!backdrop-opacity-85 !blur-sm"/>
         <Modal.Content className="!rounded-xl font-mono">
           <Modal.Header className=" !bg-bgColor !border-2  !border-primaryColor !rounded-tl-xl !rounded-tr-xl !border-b-0">
-            <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl !font-bold !italic">
+            <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl md-mx:!text-3xl !font-bold !italic">
               {props.title}
               {props.live === true && (
                 <Badge
@@ -67,7 +76,7 @@ const FullProjectModal = (props: any) => {
               ))}
             </Group>
             <Text
-              className="text-justify !text-primaryColor"
+              className="text-justify !text-primaryColor md-mx:!text-sm"
               size="xl"
               c="dimmed"
             >
