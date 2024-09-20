@@ -12,7 +12,7 @@ const About = () => {
       const [opened, { open, close }] = useDisclosure(false)
       const btn = useMatches({
             xs: 'xs',
-            sm: 'sm',
+            sm: 'xs',
             md: 'md',
             lg: 'lg'
       })
@@ -21,7 +21,7 @@ const About = () => {
 
       return (
             <div >
-                  <div className='flex md-mx:flex-col-reverse md-mx:h-fit md-mx:pt-5 xs-mx:pt-0 md-mx:overflow-visible  relative md-mx:gap-6 justify-around lg-mx:justify-center xs-mx:justify-center items-center font-mono overflow-visible px-24 sm-mx:px-16 xs-mx:px-12 h-[80vh] mt-5  '>
+                  <div className='flex md-mx:flex-col-reverse md-mx:h-fit md-mx:pt-5 xs-mx:pt-0 md-mx:overflow-visible  relative md-mx:gap-6 justify-around lg-mx:justify-center xs-mx:justify-center items-center font-mono overflow-visible px-24 sm-mx:px-16 xs-mx:px-12 h-[80vh] mt-5 mb-14  '>
                         <Particles className="absolute inset-0 -z-10" quantity={1000} ease={80} vx={.1} vy={.1} color='#64FFDA' refresh />
                         <div data-aos="fade-right" data-aos-duration="800" className='ml-16 xs-mx:ml-1 md-mx:ml-10 w-3/5 md-mx:w-full flex flex-col md-mx:items-start xs-mx:items-center md-mx:gap-0'>
                               <div className='text-4xl lg-mx:text-2xl xl-mx:text-3xl lxl-mx:text-2xl  xs-mx:text-lg text-primaryColor'>Hi, I am</div>
@@ -47,9 +47,9 @@ const About = () => {
                                                 Check Resume
                                           </Button>
                                     </div>
-                                    <div id='viewbtn' className='!flex !gap-4 !items-center sm-mx:!hidden sm:!block'>
+                                    <div id='viewbtn' className='md:!text-5xl sm-mx:!hidden sm:!block'>
                                           <Button
-                                                className='!text-bgColor  '
+                                                className='!text-bgColor !mr-2 '
                                                 onClick={open}
                                                 color="#64FFDA"
                                                 size={btn} radius="lg"
