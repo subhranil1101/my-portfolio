@@ -25,8 +25,9 @@ const FullProjectModal = (props: any) => {
         <Modal.Overlay className="!backdrop-opacity-85 !blur-sm"/>
         <Modal.Content className="!rounded-xl font-mono">
           <Modal.Header className=" !bg-bgColor !border-2  !border-primaryColor !rounded-tl-xl !rounded-tr-xl !border-b-0">
-            <Modal.Title className="!flex !gap-6 items-center  text-white !text-4xl md-mx:!text-3xl !font-bold !italic">
-              {props.title}
+            <Modal.Title className="!flex xs-mx:!flex-col !gap-6 items-center xs-mx:!gap-1  text-white !text-4xl md-mx:!text-3xl xs-mx:!text-2xl !font-bold !italic">
+              <div >{props.title}</div>
+              
               {props.live === true && (
                 <Badge
                   size="md"
@@ -40,6 +41,7 @@ const FullProjectModal = (props: any) => {
                       processing
                     />
                   }
+                  className="!w-fit"
                 >
                   Live &nbsp;
                 </Badge>

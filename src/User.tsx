@@ -7,6 +7,24 @@ const Info = {
 
 const ProjectInfo = [
   {
+    title: "JobCat",
+    desc: "A centralized job portal website with dual registration for students and recruiters. Allows recruiters to create detailed company profiles, post job vacancies with comprehensive descriptions, qualifications & requirements. Students can register, create profiles, and apply for posted positions, with the ability to track the status of their applications. Recruiters can manage & review applications, with an approval or rejection system in place.",
+    image: "./jobcat.png",
+    live: false,
+    technologies: ["React", "Redux", "NodeJs", "MongoDb","ExpressJs", "Tailwind", "Shadcn/Ui"],
+    link: "https://github.com/subhranil1101/job-portal",
+    github: "https://github.com/subhranil1101/job-portal",
+  },
+  {
+    title: "Personal Portfolio",
+    desc: " A Personal Portfolio website (responsive) to showcase my projects, skills, and education which includes detailed descriptions of my work, technology stacks, and links to code repositories. The site also highlights my technical & soft skills, along with my educational background, making it easy for employers and collaborators to get a clear overview of my journey.",
+    image: "./portfolio.png",
+    live: true,
+    technologies: ["React","Tailwind", "Mantine Component"],
+    link: "https://my-portfolio-red-eta-45.vercel.app/",
+    github: "https://github.com/subhranil1101/my-portfolio",
+  },
+  {
     title: "iNotebook",
     desc: "An online notebook web application where individuals can create an account and after login, user can create personal notes which is only visible and accessible by that user only. Notes can edit and delete only by that user.",
     image: "./iNotebook.png",
@@ -104,7 +122,7 @@ const SKillInfo = [
   },
   {
     title:'Tools',
-    skills:['Git', 'GitHub', 'VS Code', 'MongoDb Compass', 'Thunder Client']
+    skills:['Git', 'GitHub', 'VS Code', 'MongoDb Compass','Postman','Thunder Client' ]
   },
   {
     title:'Others',
